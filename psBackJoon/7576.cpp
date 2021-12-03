@@ -5,8 +5,10 @@
 
 using namespace std;
 
-vector<vector<int>> v(6, vector<int>(4));
-vector<vector<int>> days(6, vector<int>(4));
+// https://www.acmicpc.net/problem/7576
+
+vector<vector<int>> v(1001, vector<int>(1001));
+vector<vector<int>> days(1001, vector<int>(1001));
 queue<pair<int, int>> q;
 vector<int> dx = { -1, 1, 0, 0 };
 vector<int> dy = { 0, 0, 1, -1 };
@@ -19,7 +21,7 @@ int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	cin >> n >> m;
+	cin >> m >> n;
 
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < m; ++j) {
@@ -41,7 +43,6 @@ int main() {
 		for (int i = 0; i < 4; ++i) {
 			int a = p.first + dx[i];
 			int b = p.second + dy[i];
-
 			if (a < 0 || b < 0 || a >= n || b >= m) continue;
 			if (v[a][b] >= 1 || v[a][b] < 0) continue;
 			v[a][b] = v[p.first][p.second] + 1;
