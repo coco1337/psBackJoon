@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pg12906.cpp">
+    <ClCompile Include="pg12973.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
