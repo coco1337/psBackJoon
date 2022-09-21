@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="kakao_blind_2022_92335.cpp">
+    <ClCompile Include="kakao_blind_2018_17682.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
